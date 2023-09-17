@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: black;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 50px;
+    width: 100%;
+    background-color: rgb(177, 22, 22);
+    font-family: playfair display;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    flex-direction: row; /* On smaller screens, stack the menu vertically */
+    text-align: center; /* Center-align the menu items */
+    
+}
+
+nav ul li {
+    list-style: none;
+    margin: 0 25px;
+    margin: 10px; /* Add some vertical spacing between menu items */
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+nav ul li a:hover {
+    color: rgb(122, 240, 224);
+    font-size: 1.5rem;
+    animation-delay: 10ms;
+}
+main hr{
+    border: 0;
+    background-color: rgb(177, 22, 22);
+    height: 1.5px;
+    margin: auto;
+}
+
+.left {
+    font-size: 1.5rem;
+}
+
+.firstSection {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 30px 0;
+    flex-direction: column; /* Stack the elements vertically */
+    text-align: center; /* Center-align the content */
+    
+}
+
+.firstSection div {
+    width: 100%; /* Use the full width for content */
+    margin-bottom: 20px; /* Add spacing between sections */
+}
+
+.leftSection {
+    /* background-color: brown; */
+    font-size: 3rem;
+  
+    /* margin: 30px 0; */
+}
+.buttons {
+    display: flex;
+  
+    flex-direction: column; /* Stack buttons vertically */
+    margin: 0 auto; /* Center-align the buttons */
+}
+
+.btn{
+    padding: 15px;
+    margin: 0 10px;
+    background: rgb(196, 28, 28);
+    color: white;
+    border: 2px solid black;
+    border-radius: 6px;
+    font-size: 20px;
+    cursor: pointer;
+    margin: 10px 0; /* Add spacing between buttons */
+    
+}
+.btn a{
+    text-decoration: none;
+    color: white;
+}
+.btn:hover{
+    background: black;
+    color: white;
+
+}
+/* .rightSection {
+    background-color: brown;
+} */
+.rightSection img {
+    max-width: 100%; /* Ensure the image doesn't overflow its container */
+    height: auto; /* Maintain image aspect ratio */
+
+}
+
+.nameSpan {
+    color: red;
+}
+
+#element {
+    color: red;
+}
+footer .footerRights{
+    text-align: center;
+    color: gray;
+    margin: 50px 0 0 0;
+}
+
+/* Add media query for larger screens (e.g., tablets and desktops) */
+@media screen and (min-width: 768px) {
+    .firstSection {
+        flex-direction: row; /* Restore horizontal layout */
+        align-items: center; /* Center-align the content vertically */
+    }
+
+    .firstSection div {
+        width: 50%; /* Use 50% width for each column on larger screens */
+        margin-bottom: 0; /* Remove spacing between sections */
+    }
+
+    /* Adjust button container for horizontal layout */
+    .buttons {
+        flex-direction: row; /* Arrange buttons side by side */
+        margin: 0; /* Remove margin for horizontal layout */
+    }
+    
+}
