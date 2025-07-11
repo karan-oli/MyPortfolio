@@ -164,3 +164,68 @@ footer .footerRights{
     }
     
 }
+
+body.projects-page .leftSection {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+}
+
+@media screen and (min-width: 600px) {
+  body.projects-page .leftSection {
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+}
+
+body.projects-page .leftSection h2 {
+  font-size: 1.5rem;
+  margin-bottom: 12px;
+  grid-column: 1 / -1;
+  text-align: center;
+  justify-self: center;
+}
+
+body.projects-page #projects-list {
+  display: contents;
+}
+
+body.projects-page .projectCard p {
+  font-size: 13px;
+}
+
+body.projects-page .projectCard h3 {
+  font-size: 15px;
+  margin-bottom: 6px;
+}
+
+body.projects-page .projectCard a {
+  font-size: 15px;
+}
+
+body.projects-page .projectCard {
+  max-width: 420px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (min-width: 900px) {
+  body.projects-page .firstSection {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+  body.projects-page .leftSection {
+    width: 65%;
+  }
+  body.projects-page .rightSection {
+    width: 35%;
+  }
+}
+
+@media screen and (max-width: 899px) {
+  body.projects-page .leftSection,
+  body.projects-page .rightSection {
+    width: 100%;
+  }
+}
